@@ -16,7 +16,7 @@ IDbConnection conn = new MySqlConnection(connString);
 
 //Console.WriteLine(connString);
 
-/*
+
 var repo = new EmployeeDepo(conn);
 
 var employees = repo.GetAllEmployees();
@@ -25,7 +25,8 @@ foreach (var employee in employees)
 {
     Console.WriteLine($"{employee.EmployeeID} | {employee.FirstName} {employee.LastName} | {employee.EmailAddress} | {employee.DateOfBirth}");
 }
-*/
+
+Console.WriteLine();
 
 var pRepo = new ProductDepo(conn);
 
